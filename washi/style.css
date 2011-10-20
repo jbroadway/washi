@@ -1,0 +1,111 @@
+/**
+ * Design by Johnny Broadway
+ * http://www.elefantcms.com/
+ *
+ * Washi background:
+ * http://subtlepatterns.com/?p=748
+ *
+ * Pilaf colour palette:
+ * http://www.colourlovers.com/palette/1812113/Pilaf +
+ * http://www.colourlovers.com/color/3A372F/Clemintine
+ */
+body {
+	background: #f5f5f5;
+	background: url(washi.png);
+	color: #000;
+	font-size: 81.25%; /* 13px */
+	font-family: Georgia, serif;
+}
+
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* traditional scale */
+h1 { font-size: 1.5em; color: #3A372F; }
+h2 { font-size: 1.33333em; color: #3A372F; }
+h3 { font-size: 1.16667em; color: #3A372F; }
+
+a {
+	color: #6E495B;
+}
+
+a:hover {
+	color: #9374A0;
+}
+
+ul {
+	list-style-type: square;
+}
+
+#wrapper {
+	margin: auto;
+	padding-top: 15px;
+}
+
+#head h1 {
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+	color: #5A6231;
+}
+
+#menu {
+	margin-top: 10px;
+	border-bottom: 4px solid #9A9B57;
+}
+
+	#menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		margin-left: 5px;
+	}
+
+	#menu ul li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+
+	#menu a {
+		background: #3A372F;
+		color: #fff;
+		display: block;
+		float: left;
+		border-right: 1px solid #f5f5f5;
+		text-decoration: none;
+		padding: 5px 20px 5px 20px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+	#menu li.current a {
+		background: #9A9B57;
+	}
+
+	#menu a:hover {
+		background: #5A6231;
+	}
+
+#body, #sidebar {
+	margin-top: 25px;
+}
+
+#sidebar {
+	margin-left: 30px;
+	margin-right: -30px;
+}
+
+#index-blocks {
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+#footer {
+	margin-top: 30px;
+	text-align: right;
+	color: #666;
+}

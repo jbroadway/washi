@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ conf('General', 'site_name') }} - {{ window_title }}</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/css/text.css" />
+	<link rel="stylesheet" type="text/css" href="/css/960.css" />
+	<link rel="stylesheet" type="text/css" href="/layouts/washi/style.css" />
+	{! admin/head !}
+	{{ head|none }}
+</head>
+<body>
+<div id="wrapper" class="container_12">
+	<div id="head" class="grid_12">
+		<h1>{{ conf('General', 'site_name') }}</h1>
+	</div>
+	<div class="clear"></div>
+	<div id="menu" class="grid_12 alpha omega">
+		{! navigation/top !}
+	</div>
+	<div class="clear"></div>
+{% if id == 'index' %}
+	<!-- alternate layout for index: slideshow banner + body + 3-column blocks -->
+	<div id="banner" class="grid_12 alpha omega">
+		{! filemanager/slideshow?path=homepage !}
+	</div>
+	<div class="clear"></div>
+	<div id="body" class="grid_12 alpha omega">
+		{% if title != '' %}<h1>{{ title }}</h1>{% end %}
+		{{ body|none }}
+	</div>
+	<div class="clear"></div>
+	<div id="index-blocks" class="grid_12">
+	<div class="grid_4 alpha">
+		{! blocks/index-left !}
+	</div>
+	<div class="grid_4">
+		{! blocks/index-middle !}
+	</div>
+	<div class="grid_4 omega">
+		{! blocks/index-right !}
+	</div>
+	</div>
+{% else %}
+	<!-- default layout for pages: body + sidebar block -->
+	<div id="body" class="grid_8 alpha">
+		{% if title != '' %}<h1>{{ title }}</h1>{% end %}
+		{{ body|none }}
+	</div>
+	<div id="sidebar" class="grid_4 omega">
+		{! blocks/sidebar !}
+	</div>
+{% end %}
+	<div class="clear"></div>
+	<div id="footer" class="grid_12 alpha omega">
+		&copy; {{ date('Y') }} {{ conf('General', 'site_name') }}<br />
+		{"Powered by"} <a href="http://www.elefantcms.com/">Elefant CMS</a>
+	</div>
+	<div class="clear"></div>
+</div>
+{{ tail|none }}
+</body>
+</html>
