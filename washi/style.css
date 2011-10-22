@@ -78,6 +78,10 @@ ul {
 		text-decoration: none;
 		padding: 5px 20px 5px 20px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		-moz-border-radius-topleft: 3px;
+		-moz-border-radius-topright: 3px;
+		-webkit-border-top-left-radius: 3px;
+		-webkit-border-top-right-radius: 3px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 	}
