@@ -15,8 +15,8 @@
 
 Homepage:
 
-![](http://github.com/jbroadway/washi/raw/master/washi/screenshot-index.png)
+![](http://github.com/jbroadway/washi/raw/master/screenshot-index.png)
 
 Inner pages:
 
-![](http://github.com/jbroadway/washi/raw/master/washi/screenshot-inner.png)
+![](http://github.com/jbroadway/washi/raw/master/screenshot-inner.png)
